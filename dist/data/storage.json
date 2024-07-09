@@ -1,0 +1,90 @@
+{
+  "halo_reach": {
+    "title": "Halo: Reach",
+    "missions": [
+      "Winter Contingency",
+      "ONI: Sword Base",
+      "Nightfall",
+      "Tip of the Spear",
+      "Long Night of Solace",
+      "Exodus",
+      "New Alexandria",
+      "The Package",
+      "The Pillar of Autumn",
+      "Lone Wolf"
+    ]
+  },
+  "halo_ce": {
+    "title": "Halo: Combat Evolved",
+    "missions": [
+      "The Pillar of Autumn",
+      "Halo",
+      "The Truth and Reconciliation",
+      "The Silent Cartographer",
+      "Assault on the Control Room",
+      "343 Guilty Spark",
+      "The Library",
+      "Two Betrayals",
+      "Keyes",
+      "The Maw"
+    ]
+  },
+  "halo_2": {
+    "title": "Halo 2",
+    "missions": [
+      "Cairo Station",
+      "Outskirts",
+      "Metropolis",
+      "The Arbiter",
+      "The Oracle",
+      "Delta Halo",
+      "Regret",
+      "Sacred Icon",
+      "Quarantine Zone",
+      "Gravemind",
+      "Uprising",
+      "High Charity",
+      "The Great Journey"
+    ]
+  },
+  "halo_3_odst": {
+    "title": "Halo 3: ODST",
+    "missions": [
+      "Mombasa Streets",
+      "Tayari Plaza",
+      "Uplift Reserve",
+      "Kizingo Boulevard",
+      "ONI Alpha Site",
+      "NMPD HQ",
+      "Kikowani Station",
+      "Data Hive",
+      "Coastal Highway"
+    ]
+  },
+  "halo_3": {
+    "title": "Halo 3",
+    "missions": [
+      "Sierra 117",
+      "Crow's Nest",
+      "Tsavo Highway",
+      "The Storm",
+      "Floodgate",
+      "The Ark",
+      "The Covenant",
+      "Cortana",
+      "Halo"
+    ]
+  },
+  "halo_4": {
+    "title": "Halo 4",
+    "missions": [
+      "Dawn",
+      "Requiem",
+      "Forerunner",
+      "Infinity",
+      "Reclaimer",
+      "Shutdown",
+      "Composer"
+    ]
+  }
+}

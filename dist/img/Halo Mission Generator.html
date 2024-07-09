@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo Mission Generator</title>
+    <link href="Halo%20Mission%20Generator_files/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="http://127.0.0.1:5500/dist/img/1532190_icon.jpg">
+    <style>
+      @font-face {
+        font-family: haloFont;
+        src: url(./fonts/Halo.ttf);
+      }
+      .haloFont {
+        font-family: haloFont;
+      }
+      .darken {
+        filter: brightness(0.5);
+        z-index: -1;
+        /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
+      }
+      .upper {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-[url('../img/halo-background.jpg')] bg-no-repeat bg-center bg-cover bg-fixed">
+    <div id="app" class="sm:p-12 p-2">
+      <form id="generator">
+        <p class="text-white text-center uppercase text-xl">Select game(s)</p>
+        <div class="flex text-white items-center justify-between haloFont text-2xl flex-wrap">
+          <div class="border border-gray-700 p-2">
+            <label for="halo_reach">Halo Reach</label>
+            <input type="checkbox" name="halo_reach" id="halo_reach" checked="checked">
+          </div>
+          <div>
+            <label for="halo_ce">Halo: Combat Evolved</label>
+            <input type="checkbox" name="halo_ce" id="halo_ce" checked="checked">
+          </div>
+          <div>
+            <label for="halo_2">Halo 2</label>
+            <input type="checkbox" name="halo_2" id="halo_2" checked="checked">
+          </div>
+          <div>
+            <label for="halo_3_odst">Halo 3: ODST</label>
+            <input type="checkbox" name="halo_3_odst" id="halo_3_odst" checked="checked">
+          </div>
+          <div>
+            <label for="halo_3">Halo 3</label>
+            <input type="checkbox" name="halo_3" id="halo_3" checked="checked">
+          </div>
+          <div>
+            <label for="halo_4">Halo 4</label>
+            <input type="checkbox" name="halo_4" id="halo_4" checked="checked">
+          </div>
+        </div>
+        <button type="submit" class="text-white rounded-md border-white border p-2 mt-4 w-full hover:border-transparent hover:bg-cyan-500">
+          Get Random Mission
+        </button>
+      </form>
+
+      <div id="display" class="mt-12"></div>
+    </div>
+
+    <script src="Halo%20Mission%20Generator_files/jquery-3.7.1.min.js.js"></script>
+    <script src="Halo%20Mission%20Generator_files/app.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

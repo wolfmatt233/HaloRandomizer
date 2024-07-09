@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halo Mission Generator</title>
+    <link href="./styles/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./img/1532190_icon.jpg" />
+    <style>
+      @font-face {
+        font-family: haloFont;
+        src: url(./fonts/Halo.ttf);
+      }
+      .haloFont {
+        font-family: haloFont;
+      }
+      .darken {
+        filter: brightness(0.5);
+        z-index: -1;
+        /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
+      }
+      .upper {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[url('../img/halo-background.jpg')] bg-no-repeat bg-center bg-cover bg-fixed"
+  >
+    <div id="app" class="sm:p-12 p-2">
+      <form id="generator">
+        <p class="text-white text-center uppercase text-xl">Select game(s)</p>
+        <div class="flex text-white items-center haloFont text-2xl flex-wrap">
+          <div
+            class="border border-gray-700 p-2 rounded items-center hover:border-white mt-2 bg-slate-600 mr-2"
+          >
+            <input type="checkbox" name="halo_reach" id="halo_reach" />
+            <label for="halo_reach">Halo Reach</label>
+          </div>
+          <div
+            class="border border-gray-700 p-2 rounded items-center hover:border-white mt-2 bg-slate-600 mr-2"
+          >
+            <input type="checkbox" name="halo_ce" id="halo_ce" />
+            <label for="halo_ce">Halo: Combat Evolved</label>
+          </div>
+          <div
+            class="border border-gray-700 p-2 rounded items-center hover:border-white mt-2 bg-slate-600 mr-2"
+          >
+            <input type="checkbox" name="halo_2" id="halo_2" />
+            <label for="halo_2">Halo 2</label>
+          </div>
+          <div
+            class="border border-gray-700 p-2 rounded items-center hover:border-white mt-2 bg-slate-600 mr-2"
+          >
+            <input type="checkbox" name="halo_3_odst" id="halo_3_odst" />
+            <label for="halo_3_odst">Halo 3: ODST</label>
+          </div>
+          <div
+            class="border border-gray-700 p-2 rounded items-center hover:border-white mt-2 bg-slate-600 mr-2"
+          >
+            <input type="checkbox" name="halo_3" id="halo_3" />
+            <label for="halo_3">Halo 3</label>
+          </div>
+          <div
+            class="border border-gray-700 p-2 rounded items-center hover:border-white mt-2 bg-slate-600 mr-2"
+          >
+            <input type="checkbox" name="halo_4" id="halo_4" />
+            <label for="halo_4">Halo 4</label>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="text-white rounded-md border-gray-700 border p-3 mt-4 w-full hover:bg-slate-500"
+        >
+          Get Random Mission
+        </button>
+      </form>
+
+      <div id="display" class="mt-12"></div>
+    </div>
+
+    <script src="./lib/jquery-3.7.1.min.js.js"></script>
+    <script src="./app/app.js"></script>
+  </body>
+</html>
